@@ -1,0 +1,25 @@
+{
+  "name": "fastchatapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesus-seijas-sp/fastchatapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jesus-seijas-sp/fastchatapp/issues"
+  },
+  "homepage": "https://github.com/jesus-seijas-sp/fastchatapp#readme",
+  "dependencies": {
+    "@agarimo/languages": "^1.0.1",
+    "@agarimo/neural": "^1.1.2",
+    "fastify": "^3.29.0"
+  }
+}
