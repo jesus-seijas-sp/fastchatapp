@@ -12,10 +12,9 @@ function startServer() {
   const processorEn = getProcessor('en');
   const net = new Neural({ processor: processorEn });
   net.train(corpus);
-  fastify.get('/:text', function (req, reply) {
-    const text = req.params.text;
-    const output = net.run(text);
-    reply.code(200).send(output);
+  fastify.get('*', function (req, reply) {
+    const input = decodeURI(req.url.slice(1));
+    reply.send(net.run(input));
   });  
   fastify.listen(port, '0.0.0.0', () => {
     console.log(`listening on port ${port}, PID: ${process.pid}`);
