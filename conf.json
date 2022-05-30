@@ -1,0 +1,9 @@
+{
+  "port": 3000,
+  "corpus": "./data/corpus-en.json",
+  "connections": 400,
+  "pipelining": 20,
+  "duration": 60,
+  "workers": 4, 
+  "numCPUS": 4
+}
